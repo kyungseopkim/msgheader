@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package lucid.msg;
+
+message MessageHeader {
+    string  vin          = 1;
+    uint32  payloadVer   = 2;
+    uint32  arxmlVer     = 3;
+    uint32  seq          = 4;
+    uint32  vlan         = 5;
+    uint64  ts           = 6; 
+}
